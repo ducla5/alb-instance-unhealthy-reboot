@@ -27,7 +27,7 @@ Substitute the region of your elb for {region}, e.g. `us-west-2`
 bump the lambda function timeout to 60 seconds.)
 
 ```
-claudia create --handler elb-instance-reboot.handler --policies policies --timeout 60 --region {region}
+AWS_PROFILE={your_profile} claudia create --handler elb-instance-reboot.handler --policies policies --timeout 60 --region {region}
 ```
 
 ### Step 2: Create an SNS Topic

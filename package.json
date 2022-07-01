@@ -1,14 +1,14 @@
 {
-  "name": "elb-instance-reboot",
+  "name": "alb-instance-unhealthy-reboot",
   "version": "1.0.0",
-  "description": "Lambda function to automatically reboot unhealthy AWS ELB instances",
-  "main": "elb-instance-reboot.js",
+  "description": "Lambda function to automatically reboot unhealthy AWS ALB instances",
+  "main": "alb-instance-unhealthy-reboot.js",
   "scripts": {
     "test": "claudia test-lambda"
   },
   "keywords": [
     "AWS",
-    "ELB",
+    "ALB",
     "reboot",
     "healthcheck"
   ],
