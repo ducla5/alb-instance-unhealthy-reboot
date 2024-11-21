@@ -1,8 +1,8 @@
 {
-  "name": "alb-instance-unhealthy-reboot",
+  "name": "elb-instance-reboot",
   "version": "1.0.0",
   "description": "Lambda function to automatically reboot unhealthy AWS ALB instances",
-  "main": "alb-instance-unhealthy-reboot.js",
+  "main": "elb-instance-reboot.js",
   "scripts": {
     "test": "claudia test-lambda"
   },
@@ -15,8 +15,8 @@
   "author": "ducla",
   "license": "MIT",
   "dependencies": {
-    "async-waterfall": "^0.1.5",
-    "aws-sdk": "^2.4.9",
-    "chatwork-api-client": "^3.4.0"
+    "@aws-sdk/client-ec2": "^3.697.0",
+    "@aws-sdk/client-elastic-load-balancing-v2": "^3.697.0",
+    "@slack/webhook": "^6.1.0"
   }
 }
